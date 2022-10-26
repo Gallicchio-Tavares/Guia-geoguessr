@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="pt-br" style="height: 100%;">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="index.js"></script>
+    <title>Um Guia Geoguessr</title>
+</head>
+<body>
+    <header>
+        <div>
+            <button class="continents" onclick="location.href='../africa/africa.html'">África</button>
+            <button class="continents" onclick="location.href='../americas/america.html'">Américas</button>
+            <button class="continents" onclick="location.href='../antartida/antartida.html'">Antártida</button>
+            <button class="continents" onclick="location.href='../asia/asia.html'">Ásia</button>
+            <button class="continents" onclick="location.href='../europa/europa.html'">Europa</button>
+            <button class="continents" onclick="location.href='../oceania/oceania.html'">Oceania</button>
+        </div>
+        <div id="title">
+            <h1>Guia Geoguessr - o seu guia para identificar todos os países do mundo!</h1>
+        </div>
+    </header>
+    <button onclick="topFunction()" class="btn"><i class="fa fa-home"></i></button>
+    <main>
+        
+        <p class="paragrafo">
+            Sabe quando você joga Geoguessr pela primeira vez e parece ser quase impossível simplesmente acertar de cara em qual país você está? Toda paisagem parece mais ou menos a mesma, às vezes erramos até o continente, não sabemos quais países realmente estão no streetview do Google, não prestamos atenção em detalhes cruciais... Felizmente, se tornar bom nesse jogo é completamente possível! Aprender o básico de geografia já vai poder te ajudar a se diferenciar dos demais jogadores e conhecer estratégias mais aprofundadas vão fazer você perceber os seus arredores com muita rapidez e facilidade.
+        </p>
+        <p class="paragrafo">Aqui nesse Guia eu vou te ensinar do mais básico (aquelas coisas que você aprendeu na escola em geografia e provavelmente esqueceu) até as estratégias mais obscuras usadas pelos jogadores profissionais que deixam qualquer um de queixo caído.</p>
+        <p class="paragrafo"><big>Se você ainda é um jogador iniciante e pouco experiente, não deixe de ler as dicas aqui embaixo antes de sair clicando nos botões ali em cima.</big></p>
+        <br>
+        <div id="dicas">
+            <div>
+                <h2>Primeiro: como usar este guia</h2>
+                <p class="paragrafo">Sinta-se livre pra usar esse guia como cola durante o seu treino, de início pode ser difícil memorizar tanta informação. Isso talvez seja bem óbvio, mas você só vai conseguir aprender a jogar bem com muita prática.</p>
+                <h3>A estrutura do site:</h3>
+                <p class="paragrafo-sub">Há 6 continentes há serem explorados ali no topo: a África, as Américas, a Antártida, a Ásia, a Europa e a Oceania. Cada uma das páginas dos continentes têm dicas específicas a respeito deles e, por sua vez, os países em si têm suas especificidades que são os fatores mais importantes e determinantes para se aprender. Certo, mas o que são exatamente esses fatores?</p>
+                <p class="paragrafo-sub">Esses fatores são as características especiais que cada país tem, como arquitetura, vegetação, solo, placas de rua e de estrada, carros mais comuns, vestimenta e cultura, idioma e tantos outros. Aprender a diferenciar essas características de cada país é que vão te ajudar a se tornar um bom jogador. Quem é mais espertinho já sabe que há outra coisa que pro player usa muito: os metas. Isso você vai aprender aqui também, mas tenha em mente que meta não é nada se você não souber como um país se parece. Até porque é muito mais divertido acertar o lugar onde você está olhando pra vegetação, por exemplo, do que saber qual cor de carro do Google existe em tal lugar.</p>
+            </div>
+            <br>
+            <div>
+                <h2>O Básico:</h2>
+                <!-- falar da posição do sol, do lado da rua onde os carros dirigem, saber usar a bússola, quais países estão no
+                streetview e quais não estão -->
+                <p>
+                    Antes de entrar a fundo, há alguns conceitos básicos que todo mundo precisa conhecer para poder jogar bem:
+                </p>
+                <div id="sol">
+                    <h3>Direção do sol:</h3>
+                    <p class="paragrafo-sub">
+                        Saber em qual direção o sol está vai determinar se você está no hemisfério norte ou no sul, o que já pode reduzir uma quantidade significável de países que você poderia adivinhar caso esteja em dúvida.
+                        A Terra gira em torno do sol em um determinado ângulo fazendo com que o sol nunca esteja no norte no hemisfério norte e nunca esteja no sul no hemisfério sul, ou seja:
+                        <ul>
+                            <li>A bússola indica que o sol está no <b>norte</b>  = hemisfério <b>sul</b></li>
+                            <li>A bússola indica que o sol está no <b>sul</b> = hemisfério <b>norte</b></li>
+                        </ul>
+                    </p>
+                    <p class="paragrafo-sub">Analogamente, se o sol estiver no norte, as sombras geradas por ele estarão apontando para o sul, enquanto se ele estiver no sul as sombras estarão apontando para o norte.</p>
+                    <p class="paragrafo-sub"><big style="color: red;">Atenção!</big> Se você estiver muito próximo da linha do equador, <b>essa regra não vai valer mais</b>, porque o sol pode estar em ambas as direções.</p>
+                    <br>
+                    
+                    <div id="slideshow1" class="slideshow-container">
+                        <!-- sol em lugar nenhum, nublado, sol no sul, sol no norte, linha do equador, sol a pinho -->
+                        <div class="mySlides1">
+                            <div class="numbertext">1 / 7</div>
+                            <img src="sol-no-sul.png" style="width:100%">
+                            <div class="text">Sol no sul: hemisfério norte</div>
+                        </div>
+                    
+                        <div class="mySlides1">
+                            <div class="numbertext">2 / 7</div>
+                            <img src="sol-no-norte.png" style="width:100%">
+                            <div class="text">Sol no norte: hemisfério sul</div>
+                        </div>
+                    
+                        <div class="mySlides1">
+                            <div class="numbertext">3 / 7</div>
+                            <img src="oeste-leste.png" style="width:100%">
+                            <div class="text">Às vezes, o sol não vai estar nem no norte nem no sul</div>
+                        </div>
+
+                        <div class="mySlides1">
+                            <div class="numbertext">4 / 7</div>
+                            <img src="nublado.png" alt="nublado" style="width:100%">
+                            <div class="text">O tempo pode estar tão nublado que não dá pra dizer onde o sol está</div>
+                        </div>
+
+                        <div class="mySlides1">
+                            <div class="numbertext">5 / 7</div>
+                            <img src="sol-a-pinho.png" alt="sol a pino" style="width:100%">
+                            <div class="text">O sol pode estar a pino</div>
+                        </div>
+                        <div class="mySlides1">
+                            <div class="numbertext">6 / 7</div>
+                            <img src="colombia-sol-norte.png" alt="Sol no norte na Colômbia" style="width:100%">
+                            <div class="text">Sol no norte na Colômbia, que fica próxima do equador</div>
+                        </div>
+                        <div class="mySlides1">
+                            <div class="numbertext">7 / 7</div>
+                            <img src="colombia-sol-sul.png" alt="sol no sul na Colômbia" style="width:100%">
+                            <div class="text">Sol no sul na Colômbia</div>
+                        </div>
+                    
+                        <!-- Next and previous buttons -->
+                        <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
+                        <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
+                        <div style="text-align:center">
+                            <span class="dot" onclick="currentSlide(1, 0)"></span>
+                            <span class="dot" onclick="currentSlide(2, 0)"></span>
+                            <span class="dot" onclick="currentSlide(3, 0)"></span>
+                            <span class="dot" onclick="currentSlide(4, 0)"></span>
+                            <span class="dot" onclick="currentSlide(5, 0)"></span>
+                            <span class="dot" onclick="currentSlide(6, 0)"></span>
+                            <span class="dot" onclick="currentSlide(7, 0)"></span>
+                        </div> 
+                    </div>
+                    <br>
+                    
+                </div>
+                <div id="antena">
+                    <h3>Antenas:</h3>
+                    <p class="paragrafo-sub">Assim como o sol, antenas podem ser relativamente úteis em determinar em qual hemisfério você está. 
+                        Não são tão úteis quanto a estratégia do sol (porque nem sempre você vai ver uma antena) mas é bom saber.
+                        As antenas sempre apontam na direção onde a linha do equador está, porque é ali onde os satélites ficam. Por isso, quanto mais longe do equador você estiver, mais inclinadas estarão as antenas. Quanto mais ao norte, mais pro sul vão estar apontando, e quanto mais ao sul, mais pro norte estarão inclinadas.   
+                    </p>
+                    <div id="slideshow2" class="slideshow-container">
+                        <!-- sol em lugar nenhum, nublado, sol no sul, sol no norte, linha do equador, sol a pinho -->
+                        <div class="mySlides2">
+                            <div class="numbertext">1 / 5</div>
+                            <img class="image" src="antenas-equador.png" style="width:100%">
+                            <div class="text">Antenas apontando pra cima: perto da linha do equador. (Indonésia)</div>
+                        </div>
+                    
+                        <div class="mySlides2">
+                            <div class="numbertext">2 / 5</div>
+                            <img class="image" src="antena-pnorte-RS.png" style="width:100%">
+                            <div class="text">Antena apontando pro norte: hemisfério sul. (Brasil, RS)</div>
+                        </div>
+                    
+                        <div class="mySlides2">
+                            <div class="numbertext">3 / 5</div>
+                            <img class="image" src="antena-psul-EUA.png" style="width:100%">
+                            <div class="text">Antena apontando para o sul: hemisfério norte. (EUA)</div>
+                        </div>
+                        <div class="mySlides2">
+                            <div class="numbertext">4 / 5</div>
+                            <img class="image" src="antena-psul-IC.png" style="width:100%">
+                            <div class="text">Antena apontando para o sul: hemisfério norte. Note como a antena está vertical, isso significa que estamos perto do polo norte. (Islândia)</div>
+                        </div>
+                        <div class="mySlides2">
+                            <div class="numbertext">5 / 5</div>
+                            <img class="image" src="antena-pnorte-NZ.png" style="width:100%">
+                            <div class="text">Antena apontando pro norte: hemisfério sul. Note como a antena está vertical, isso significa que nós estamos perto do polo sul. (Nova Zelândia)</div>
+                        </div>
+                        <!-- Next and previous buttons -->
+                        <a class="prev" onclick="plusSlides(-1, 1)">&#10094;</a>
+                        <a class="next" onclick="plusSlides(1, 1)">&#10095;</a>
+                        <div style="text-align:center">
+                            <span class="dot" onclick="currentSlide(1, 1)"></span>
+                            <span class="dot" onclick="currentSlide(2, 1)"></span>
+                            <span class="dot" onclick="currentSlide(3, 1)"></span>
+                            <span class="dot" onclick="currentSlide(4, 1)"></span>
+                            <span class="dot" onclick="currentSlide(5, 1)"></span>
+                        </div> 
+                    </div>
+                    <br>
+                    
+                </div>
+                <div id="streetview">
+                    <h3>Cobertura do StreetView:</h3>
+                    <img class="img-unica" src="Streetview_no_mundo.png" alt="StreetView no mundo">
+                    <p></p>
+                </div>
+            </div>
+            <div>
+                <h2>Mapas para treinar:</h2>
+                <ul style="text-align: justify;">
+                    <li><span>Talvez o mapa mais querido e conhecido de todos os jogadores. Ele tem tudo o que você precisa e vai ser provavelmente um dos mapas no qual você vai passar mais tempo. É o ideal pra qualquer tipo de treino que você queira fazer: </span><a class="link" href="https://www.geoguessr.com/maps/59a1514f17631e74145b6f47">A Diverse World</a></li>
+                    <br>
+                    <li><span>Do mesmo criador do mapa anterior, esse também é uma versão melhorada do mapa World (aquele mapa oficial do Geoguessr que é simplesmente horrível), só que com localidades urbanas. É um bom complemento: </span><a class="link" href="https://www.geoguessr.com/maps/5b3d510b7a2b425ef47b54fd">An Urban World</a></li>
+                    <br>
+                    <li><span>Como o nome indica, esse mapa vai sempre te deixar em um lugar possível de ser encontrado no mapa (alguns mais complicados que outros), e isso inclui uma habilidade importante que é saber procurar coisas em mapas, ou seja, olhar a placa e identificar o país, procurar uma determinada cidade ou estrada no mapa, e verificar a direção da rua pela bússola para marcar o lugar exato. Pode parecer meio cansativo, mas vale a pena porque é extremamente gratificante encontrar um lugar desse jeito (sem pesquisar no Google, hein): </span><a class="link" href="https://www.geoguessr.com/maps/5cfda2c9bc79e16dd866104d">I Saw The Sign</a></li>
+                    <br>
+                    <li><span>Esse mapa criado pelo Geopeter é um dos melhores pra aprimorar as suas habilidades, porque as rodadas sempre vão cair em algum lugar com as dicas específicas que eu explico aqui: </span><a class="link" href="https://www.geoguessr.com/maps/6078c830e945e900015f4a64">A Learning World</a></li>
+                    <br>
+                    <li><span>Aqui nesse mapa você pode aprender a identificar os idiomas falados nos países. Essa é uma habilidade muito importante, porque às vezes basta uma letrinha com um acento específico pra diferenciar um país de outro: </span><a class="link" href="https://www.geoguessr.com/maps/607c22f8132f83000123938e">A Linguistic World</a></li>
+                    <br>
+                    <li><span>Aprender as bandeiras dos países é crucial e, apesar de ter bandeiras de países que não estão no streetview oficial, esse mapa vai ser bem útil em juntar o conhecimento das bandeiras com a paisagem: </span><a class="link" href="https://www.geoguessr.com/maps/5d0ce72c8b19a91fe05aa7a8">Flags of the World</a></li>
+                </ul>
+            </div>
+             
+        </div>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+</html>

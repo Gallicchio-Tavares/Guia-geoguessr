@@ -1,0 +1,71 @@
+body{
+    height: 100%;
+    background-image: url(europa.png);
+    background-color: #161618;
+    background-repeat: no-repeat;
+    background-size: 60%;
+    background-position: 70%;
+    font-family: 'Ubuntu', sans-serif;
+    color: #b1b1b1;
+    text-transform: none;
+    text-align: justify;    
+    font-size: 1.05em;
+}
+
+.home{
+    display: flex;
+    flex-direction: column;
+    transition-duration: 0.4s;
+    background-color: #212124;
+    color: white;
+    border: 2px solid #A9A9A9; 
+    border-radius: 12px;
+    padding: 16px 16px;
+    margin: 9%;
+    font-size: 16px;
+    width: 80%;
+}
+
+.home:hover{
+    background-color: #A9A9A9;
+    color: black;
+    box-shadow: 0 12px 10px 0 rgba(255, 255, 255, 0.24), 0 17px 50px 0 rgba(255, 255, 255, 0.19);
+}
+
+.paises{
+    display: flex;
+    flex-direction: column;
+    transition-duration: 0.4s;
+    background-color: #212124;
+    color: white;
+    border: 2px solid #3DA542; 
+    border-radius: 12px;
+    padding: 16px 16px;
+    margin: 9%;
+    font-size: 16px;
+    width: 80%;
+}
+
+.paises:hover{
+    background-color: #3DA542;
+    color: black;
+    box-shadow: 0 12px 10px 0 rgba(255, 255, 255, 0.24), 0 17px 50px 0 rgba(255, 255, 255, 0.19);
+}
+
+aside{
+    height: 100%; 
+    width: auto;
+    position: fixed;
+    /* z-index: 1; */
+    top: 0;
+    left: 0;
+    background-color: #212124;
+    overflow-x: hidden;
+    overflow-y: visible;
+}
+
+h1{
+    display: flex;
+    margin-left: 20%;
+    color: #3DA542;
+}
