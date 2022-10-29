@@ -174,7 +174,7 @@
                 </div>
                 <div id="streetview">
                     <h3>Cobertura do StreetView:</h3>
-                    <img id="img-unica" src="images/Streetview_no_mundo.png" alt="StreetView no mundo">
+                    <img id="img-unica" src="images/StreetView_no_mundo.png" alt="StreetView no mundo">
                     <!-- The Modal -->
                     <div id="myModal" class="modal">
                         <!-- The Close Button -->
@@ -197,6 +197,90 @@
                             <li><b style="color: #A7D379;">Trekker:</b> cobertura feita por pessoas e não por carros, geralmente você vai encontrar templos, estádios, algumas calçadas, montanhas e outras estruturas específicas. Esse tipo de cobertura é bem característico, então se você souber quais países tem <i>apenas</i> trekker e como é a cobertura deles, vai ser fácil de identificar. (Obviamente é possível encontrar trekker em todos os países, mas a chance é bem, bem baixa).</li>
                         </ul>
                     </p>
+                </div>
+                <div id="camera">
+                    <h3>Qualidade de imagem</h3>
+                    <p class="paragrafo-sub">
+                        Existem, até o momento, quatro tipos de qualidade de câmera presentes no jogo: Gen 1, Gen 2, Gen 3 e Gen 4. Isso pode parecer besta, mas algo tão simples quanto a qualidade da imagem em um round podem fazer a diferença na hora de adivinhar onde você está, porque alguns países só possuem uma determinada qualidade de câmera. Então, digamos que você está em dúvida entre a África do Sul e a Botswana, mas percebeu que a geração da câmera é Gen 2. Com isso, você pode adivinhar África do Sul sem medo, porque a Botswana só tem cobertura de Gen 3. É importante saber diferenciar entre os tipos de qualidade de imagem:
+                        <ul class="long-ul">
+                            <li><b style="color: #A7D379;">Geração 1 (Gen 1)</b>: são imagens de péssima qualidade, em que você mal consegue discernir o que está na sua frente.</li>
+                            <br>
+                            <li><b style="color: #A7D379;">Geração 2 (Gen 2)</b>: imagens de qualidade boa, mas às vezes pode ser difícil de ler placas ou qualquer palavra com letra pequena. Uma característica importante do Gen 2 é o círculo borrado no topo e na base da imagem, que pode ter um tom meio roxo.</li>
+                            <br>
+                            <li><b style="color: #A7D379;">Geração 3 (Gen 3)</b>: melhor qualidade que o Gen 2. Não tem mais os círculos na imagem, mas você pode ver o borrado do carro do Google na base.</li>
+                            <br>
+                            <li><b style="color: #A7D379;">Geração 4 (Gen 4)</b>: excelente qualidade de imagem, as cores vão parecer mais vibrantes e mais detalhadas. O carro do Google geralemente é azul, e muitas vezes é possível enxergar. Outro tipo de carro é a caminhonete que está presente na cobertura mais recente da África.</li>
+                        </ul>
+                    </p>
+                    <div id="slideshow3" class="slideshow-container">
+                        <div class="mySlides3">
+                            <div class="numbertext">1 / 10</div>
+                            <img class="image" src="images/gen1-eua.png" style="width:100%">
+                            <div class="text">Gen 1 (EUA)</div>
+                        </div>
+                    
+                        <div class="mySlides3">
+                            <div class="numbertext">2 / 10</div>
+                            <img class="image" src="images/gen1-au.png" style="width:100%">
+                            <div class="text">Gen 1 (Austrália)</div>
+                        </div>
+                    
+                        <div class="mySlides3">
+                            <div class="numbertext">3 / 10</div>
+                            <img class="image" src="images/gen2-de.png" style="width:100%">
+                            <div class="text">Gen 2, note o círculo de tom roxo no topo da imagem (Alemanha)</div>
+                        </div>
+                        <div class="mySlides3">
+                            <div class="numbertext">4 / 10</div>
+                            <img class="image" src="images/gen2-za.png" style="width:100%">
+                            <div class="text">Gen 2, note os círculos no topo e na base da imagem (África do Sul)</div>
+                        </div>
+                        <div class="mySlides3">
+                            <div class="numbertext">5 / 10</div>
+                            <img class="image" src="images/gen3-laos.png" style="width:100%">
+                            <div class="text">Gen 3 (Laos)</div>
+                        </div>
+                        <div class="mySlides3">
+                            <div class="numbertext">6 / 10</div>
+                            <img class="image" src="images/gen3-uy.png" style="width:100%">
+                            <div class="text">Gen 3 (Uruguai)</div>
+                        </div>
+                        <div class="mySlides3">
+                            <div class="numbertext">7 / 10</div>
+                            <img class="image" src="images/gen4-br.png" style="width:100%">
+                            <div class="text">Gen 4 (Brasil)</div>
+                        </div>
+                        <div class="mySlides3">
+                            <div class="numbertext">8 / 10</div>
+                            <img class="image" src="images/gen4-sg.png" style="width:100%">
+                            <div class="text">Gen 4 (Singapura)</div>
+                        </div>
+                        <div class="mySlides3">
+                            <div class="numbertext">9 / 10</div>
+                            <img class="image" src="images/gen4-azul.png" style="width:100%">
+                            <div class="text">Gen 4, com o carro azul</div>
+                        </div>
+                        <div class="mySlides3">
+                            <div class="numbertext">10 / 10</div>
+                            <img class="image" src="images/gen4-carro.png" style="width:100%">
+                            <div class="text">Gen 4, com a caminhonete (Ruanda)</div>
+                        </div>
+                        <!-- Next and previous buttons -->
+                        <a class="prev" onclick="plusSlides(-1, 2)">&#10094;</a>
+                        <a class="next" onclick="plusSlides(1, 2)">&#10095;</a>
+                        <div style="text-align:center">
+                            <span class="dot" onclick="currentSlide(1, 2)"></span>
+                            <span class="dot" onclick="currentSlide(2, 2)"></span>
+                            <span class="dot" onclick="currentSlide(3, 2)"></span>
+                            <span class="dot" onclick="currentSlide(4, 2)"></span>
+                            <span class="dot" onclick="currentSlide(5, 2)"></span>
+                            <span class="dot" onclick="currentSlide(6, 2)"></span>
+                            <span class="dot" onclick="currentSlide(7, 2)"></span>
+                            <span class="dot" onclick="currentSlide(8, 2)"></span>
+                            <span class="dot" onclick="currentSlide(9, 2)"></span>
+                            <span class="dot" onclick="currentSlide(10, 2)"></span>
+                        </div> 
+                    </div>
                 </div>
             </div>
             <div>
