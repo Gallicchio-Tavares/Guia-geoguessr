@@ -112,7 +112,7 @@ h3{
 }
 
 /* Hide the images by default */
-.mySlides1, .mySlides2{
+.mySlides1, .mySlides2, .mySlides3{
   display: none;
 }
 
