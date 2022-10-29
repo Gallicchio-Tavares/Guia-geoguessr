@@ -69,41 +69,41 @@
                         <!-- sol em lugar nenhum, nublado, sol no sul, sol no norte, linha do equador, sol a pinho -->
                         <div class="mySlides1">
                             <div class="numbertext">1 / 7</div>
-                            <img src="sol-no-sul.png" style="width:100%">
+                            <img src="images/sol-no-sul.png" style="width:100%">
                             <div class="text">Sol no sul: hemisfério norte</div>
                         </div>
                     
                         <div class="mySlides1">
                             <div class="numbertext">2 / 7</div>
-                            <img src="sol-no-norte.png" style="width:100%">
+                            <img src="images/sol-no-norte.png" style="width:100%">
                             <div class="text">Sol no norte: hemisfério sul</div>
                         </div>
                     
                         <div class="mySlides1">
                             <div class="numbertext">3 / 7</div>
-                            <img src="oeste-leste.png" style="width:100%">
+                            <img src="images/oeste-leste.png" style="width:100%">
                             <div class="text">Às vezes, o sol não vai estar nem no norte nem no sul</div>
                         </div>
 
                         <div class="mySlides1">
                             <div class="numbertext">4 / 7</div>
-                            <img src="nublado.png" alt="nublado" style="width:100%">
+                            <img src="images/nublado.png" alt="nublado" style="width:100%">
                             <div class="text">O tempo pode estar tão nublado que não dá pra dizer onde o sol está</div>
                         </div>
 
                         <div class="mySlides1">
                             <div class="numbertext">5 / 7</div>
-                            <img src="sol-a-pinho.png" alt="sol a pino" style="width:100%">
+                            <img src="images/sol-a-pinho.png" alt="sol a pino" style="width:100%">
                             <div class="text">O sol pode estar a pino</div>
                         </div>
                         <div class="mySlides1">
                             <div class="numbertext">6 / 7</div>
-                            <img src="colombia-sol-norte.png" alt="Sol no norte na Colômbia" style="width:100%">
+                            <img src="images/colombia-sol-norte.png" alt="Sol no norte na Colômbia" style="width:100%">
                             <div class="text">Sol no norte na Colômbia, que fica próxima do equador</div>
                         </div>
                         <div class="mySlides1">
                             <div class="numbertext">7 / 7</div>
-                            <img src="colombia-sol-sul.png" alt="sol no sul na Colômbia" style="width:100%">
+                            <img src="images/colombia-sol-sul.png" alt="sol no sul na Colômbia" style="width:100%">
                             <div class="text">Sol no sul na Colômbia</div>
                         </div>
                     
@@ -133,29 +133,29 @@
                         <!-- sol em lugar nenhum, nublado, sol no sul, sol no norte, linha do equador, sol a pinho -->
                         <div class="mySlides2">
                             <div class="numbertext">1 / 5</div>
-                            <img class="image" src="antenas-equador.png" style="width:100%">
+                            <img class="image" src="images/antenas-equador.png" style="width:100%">
                             <div class="text">Antenas apontando pra cima: perto da linha do equador. (Indonésia)</div>
                         </div>
                     
                         <div class="mySlides2">
                             <div class="numbertext">2 / 5</div>
-                            <img class="image" src="antena-pnorte-RS.png" style="width:100%">
+                            <img class="image" src="images/antena-pnorte-RS.png" style="width:100%">
                             <div class="text">Antena apontando pro norte: hemisfério sul. (Brasil, RS)</div>
                         </div>
                     
                         <div class="mySlides2">
                             <div class="numbertext">3 / 5</div>
-                            <img class="image" src="antena-psul-EUA.png" style="width:100%">
+                            <img class="image" src="images/antena-psul-EUA.png" style="width:100%">
                             <div class="text">Antena apontando para o sul: hemisfério norte. (EUA)</div>
                         </div>
                         <div class="mySlides2">
                             <div class="numbertext">4 / 5</div>
-                            <img class="image" src="antena-psul-IC.png" style="width:100%">
+                            <img class="image" src="images/antena-psul-IC.png" style="width:100%">
                             <div class="text">Antena apontando para o sul: hemisfério norte. Note como a antena está vertical, isso significa que estamos perto do polo norte. (Islândia)</div>
                         </div>
                         <div class="mySlides2">
                             <div class="numbertext">5 / 5</div>
-                            <img class="image" src="antena-pnorte-NZ.png" style="width:100%">
+                            <img class="image" src="images/antena-pnorte-NZ.png" style="width:100%">
                             <div class="text">Antena apontando pro norte: hemisfério sul. Note como a antena está vertical, isso significa que nós estamos perto do polo sul. (Nova Zelândia)</div>
                         </div>
                         <!-- Next and previous buttons -->
@@ -174,8 +174,29 @@
                 </div>
                 <div id="streetview">
                     <h3>Cobertura do StreetView:</h3>
-                    <img class="img-unica" src="Streetview_no_mundo.png" alt="StreetView no mundo">
-                    <p></p>
+                    <img id="img-unica" src="images/Streetview_no_mundo.png" alt="StreetView no mundo">
+                    <!-- The Modal -->
+                    <div id="myModal" class="modal">
+                        <!-- The Close Button -->
+                        <span class="close">&times;</span>
+                    
+                        <!-- Modal Content (The Image) -->
+                        <img class="modal-content" id="img01">
+                    
+                        <!-- Modal Caption (Image Text) -->
+                        <div id="caption"></div>
+                        <script src="modal.js"></script>
+                    </div>
+                    <p class="paragrafo-sub">
+                        Como podemos ver no mapa acima, a cobertura do streetview no mundo é extremamente desigual. Então é importante saber quais países estão no jogo e quais não estão. Agora eu vou dar uma explicada melhor na legenda desse mapa:
+                        <ul class="long-ul">
+                            <li><b style="color: #A7D379;">StreetView oficial:</b> esse é o tipo de cobertura mais comum que você vai encontrar. São os países que tem cobertura completa das ruas com um carro oficial do Google. Claro que algumas áreas são mais completas que outras: você vai encontrar praticamente qualquer ruela estreita dos Estados Unidos no Google Maps, enquanto cidades isoladas da Amazônia não vão ter cobertura alguma.</li>
+                            <br>
+                            <li><b style="color: #A7D379;">StreetView limitado:</b> são países que possuem StreetView apenas em algumas cidades, e não no país todo.</li>
+                            <br>
+                            <li><b style="color: #A7D379;">Trekker:</b> cobertura feita por pessoas e não por carros, geralmente você vai encontrar templos, estádios, algumas calçadas, montanhas e outras estruturas específicas. Esse tipo de cobertura é bem característico, então se você souber quais países tem <i>apenas</i> trekker e como é a cobertura deles, vai ser fácil de identificar. (Obviamente é possível encontrar trekker em todos os países, mas a chance é bem, bem baixa).</li>
+                        </ul>
+                    </p>
                 </div>
             </div>
             <div>
