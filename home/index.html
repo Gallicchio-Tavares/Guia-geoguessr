@@ -33,12 +33,12 @@
             Sabe quando você joga Geoguessr pela primeira vez e parece ser quase impossível simplesmente acertar de cara em qual país você está? Toda paisagem parece mais ou menos a mesma, às vezes erramos até o continente, não sabemos quais países realmente estão no streetview do Google, não prestamos atenção em detalhes cruciais... Felizmente, se tornar bom nesse jogo é completamente possível! Aprender o básico de geografia já vai poder te ajudar a se diferenciar dos demais jogadores e conhecer estratégias mais aprofundadas vão fazer você perceber os seus arredores com muita rapidez e facilidade.
         </p>
         <p class="paragrafo">Aqui nesse Guia eu vou te ensinar do mais básico (aquelas coisas que você aprendeu na escola em geografia e provavelmente esqueceu) até as estratégias mais obscuras usadas pelos jogadores profissionais que deixam qualquer um de queixo caído.</p>
-        <p class="paragrafo"><big>Se você ainda é um jogador iniciante e pouco experiente, não deixe de ler as dicas aqui embaixo antes de sair clicando nos botões ali em cima.</big></p>
+        <!-- <p class="paragrafo"><big>Se você ainda é um jogador iniciante e pouco experiente, não deixe de ler as dicas aqui embaixo antes de sair clicando nos botões ali em cima.</big></p> -->
         <br>
         <div id="dicas">
             <div>
                 <h2>Primeiro: como usar este guia</h2>
-                <p class="paragrafo">Sinta-se livre pra usar esse guia como cola durante o seu treino, de início pode ser difícil memorizar tanta informação. Isso talvez seja bem óbvio, mas você só vai conseguir aprender a jogar bem com muita prática.</p>
+                <p class="paragrafo-sub">Sinta-se livre pra usar esse guia como cola durante o seu treino, de início pode ser difícil memorizar tanta informação. Isso talvez seja bem óbvio, mas você só vai conseguir aprender a jogar bem com muita prática.</p>
                 <h3>A estrutura do site:</h3>
                 <p class="paragrafo-sub">Há 6 continentes há serem explorados ali no topo: a África, as Américas, a Antártida, a Ásia, a Europa e a Oceania. Cada uma das páginas dos continentes têm dicas específicas a respeito deles e, por sua vez, os países em si têm suas especificidades que são os fatores mais importantes e determinantes para se aprender. Certo, mas o que são exatamente esses fatores?</p>
                 <p class="paragrafo-sub">Esses fatores são as características especiais que cada país tem, como arquitetura, vegetação, solo, placas de rua e de estrada, carros mais comuns, vestimenta e cultura, idioma e tantos outros. Aprender a diferenciar essas características de cada país é que vão te ajudar a se tornar um bom jogador. Quem é mais espertinho já sabe que há outra coisa que pro player usa muito: os metas. Isso você vai aprender aqui também, mas tenha em mente que meta não é nada se você não souber como um país se parece. Até porque é muito mais divertido acertar o lugar onde você está olhando pra vegetação, por exemplo, do que saber qual cor de carro do Google existe em tal lugar.</p>
@@ -49,7 +49,7 @@
                 <!-- falar da posição do sol, do lado da rua onde os carros dirigem, saber usar a bússola, quais países estão no
                 streetview e quais não estão -->
                 <p>
-                    Antes de entrar a fundo, há alguns conceitos básicos que todo mundo precisa conhecer para poder jogar bem:
+                    Antes de mergulhar de cabeça, há alguns conceitos básicos que todo mundo precisa conhecer para poder jogar bem:
                 </p>
                 <div id="sol">
                     <h3>Direção do sol:</h3>
@@ -172,7 +172,7 @@
                 </div>
                 <div id="streetview">
                     <h3>Cobertura do StreetView:</h3>
-                    <img id="img-unica" src="images/StreetView_no_mundo.png" alt="StreetView no mundo">
+                    <img class="myImages" id="myImg" src="images/StreetView_no_mundo.png" alt="StreetView no mundo">
                     <!-- The Modal -->
                     <div id="myModal" class="modal">
                         <!-- The Close Button -->
@@ -180,10 +180,6 @@
                     
                         <!-- Modal Content (The Image) -->
                         <img class="modal-content" id="img01">
-                    
-                        <!-- Modal Caption (Image Text) -->
-                        <div id="caption"></div>
-                        <script src="modal.js"></script>
                     </div>
                     <p class="paragrafo-sub">
                         Como podemos ver no mapa acima, a cobertura do streetview no mundo é extremamente desigual. Então é importante saber quais países estão no jogo e quais não estão. Agora eu vou dar uma explicada melhor na legenda desse mapa:
@@ -205,9 +201,9 @@
                             <br>
                             <li><b style="color: #A7D379;">Geração 2 (Gen 2)</b>: imagens de qualidade boa, mas às vezes pode ser difícil de ler placas ou qualquer palavra com letra pequena. Uma característica importante do Gen 2 é o círculo borrado no topo e na base da imagem, que pode ter um tom meio roxo.</li>
                             <br>
-                            <li><b style="color: #A7D379;">Geração 3 (Gen 3)</b>: melhor qualidade que o Gen 2. Não tem mais os círculos na imagem, mas você pode ver o borrado do carro do Google na base.</li>
+                            <li><b style="color: #A7D379;">Geração 3 (Gen 3)</b>: melhor qualidade que o Gen 2. Não tem mais os círculos na imagem, mas você pode ver o borrado do carro do Google na base. É, no momento, o tipo de cobertura mais comum.</li>
                             <br>
-                            <li><b style="color: #A7D379;">Geração 4 (Gen 4)</b>: excelente qualidade de imagem, as cores vão parecer mais vibrantes e mais detalhadas. O carro do Google geralemente é azul, e muitas vezes é possível enxergar. Outro tipo de carro é a caminhonete que está presente na cobertura mais recente da África.</li>
+                            <li><b style="color: #A7D379;">Geração 4 (Gen 4)</b>: excelente qualidade de imagem, as cores vão parecer mais vibrantes e mais detalhadas. O carro do Google geralemente é azul, e muitas vezes é possível enxergá-lo. Outro tipo de carro é a caminhonete que está presente na cobertura mais recente da África.</li>
                         </ul>
                     </p>
                     <div class="slideshow-container">
@@ -307,7 +303,12 @@
                     </div>
                     <div>
                         <h3>Esquerda vs. Direita, Milhas vs. Quilômetros</h3>
-                        <p></p>
+                        <p class="paragrafo-sub">A maioria dos países dirige no lado direito da estrada, mas existem aqueles que dirigem do lado esquerdo. Uma forma fácil de memorizar é ter em mente que os países que dirigem do lado esquerdo, no geral, tiveram colonização britânica (há exceções, é claro. Os EUA e o Canadá dirigem na direita e Moçambique, que teve colonização portuguesa, dirige na esquerda).</p>
+                        <img class="myImages" id="myImg" src="images/esq-dir-mapa.png" alt="StreetView no mundo">
+                        <div id="myModal" class="modal">
+                            <span class="close">&times;</span>
+                            <img class="modal-content" id="img01">
+                        </div>
                         <p class="paragrafo-sub">A maioria dos países usam o sistema métrico nas placas das estradas para indicar distância ou velocidade (quilômetros, metros, etc), mas existem exceções que utilizam o sistema imperial (milhas, jardas, pés, etc): os Estados Unidos e o Reino Unido.</p>
                     </div>
                 </div>
@@ -328,12 +329,12 @@
                     <li><span>Aprender as bandeiras dos países é crucial e, apesar de ter bandeiras de países que não estão no streetview oficial, esse mapa vai ser bem útil em juntar o conhecimento das bandeiras com a paisagem: </span><a class="link" href="https://www.geoguessr.com/maps/5d0ce72c8b19a91fe05aa7a8">Flags of the World</a></li>
                 </ul>
             </div>
-             
+            <br>
         </div>
     </main>
     <footer>
 
     </footer>
-    <script src="index.js"></script>
+    <script src="index.js"></script><script src="modal.js"></script>
 </body>
 </html>
