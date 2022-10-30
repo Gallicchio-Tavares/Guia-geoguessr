@@ -102,19 +102,7 @@ h3{
 
 /* Inicio da estilização das imagens */
 
-* {box-sizing:border-box}
 
-/* Slideshow container */
-.slideshow-container {
-  max-width: 75%;
-  position: relative;
-  margin: auto;
-}
-
-/* Hide the images by default */
-.mySlides1, .mySlides2, .mySlides3{
-  display: none;
-}
 
 /* Começo Imagem única */
 
@@ -192,14 +180,21 @@ h3{
   cursor: pointer;
 }
 
-/* 100% Image Width on Smaller Screens */
-@media only screen and (max-width: 700px){
-  .modal-content {
-    width: 100%;
-  }
+/* ^ Imagem única */
+
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 75%;
+  position: relative;
+  margin:0 auto 25px;
 }
 
-/* ^ Imagem única */
+/* Hide the images by default */
+.mySlides1, .mySlides2, .mySlides3, .mySlides4{
+  display: none;
+}
 
 /* Next & previous buttons */
 .prev, .next {
@@ -207,7 +202,7 @@ h3{
   position: absolute;
   top: 50%;
   width: auto;
-  margin-top: -22px;
+  margin-top: -4.2%;
   padding: 16px;
   color: white;
   font-weight: bold;
