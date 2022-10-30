@@ -62,8 +62,8 @@ h3{
 }
 
 .paragrafo-sub{
-  margin-left: 14%;
-  margin-right: 14%;
+  margin-left: 10%;
+  margin-right: 10%;
   text-align: justify;
 }
 
@@ -106,7 +106,7 @@ h3{
 
 /* Começo Imagem única */
 
-#img-unica {
+#myImg {
   max-width: 75%;
   position: relative;
   margin: auto;
@@ -139,20 +139,8 @@ h3{
   max-width: 100%;
 }
 
-/* Caption of Modal Image (Image Text) - Same Width as the Image */
-#caption {
-  margin: auto;
-  display: block;
-  width: 80%;
-  max-width: 700px;
-  text-align: center;
-  color: #ccc;
-  padding: 10px 0;
-  height: 150px;
-}
-
 /* Add Animation - Zoom in the Modal */
-.modal-content, #caption {
+.modal-content{
   animation-name: zoom;
   animation-duration: 0.6s;
 }
@@ -273,4 +261,14 @@ h3{
 /* On smaller screens, decrease text size */
 @media only screen and (max-width: 300px) {
   .prev, .next,.text {font-size: 11px}
+}
+
+footer{
+  background-color: rgba(22, 22, 24, 0.5);
+  overflow: hidden;
+  height: 200px;
+  width: 100%;
+  margin: 0%;
+  border-top: solid 2px #3DA542;
+
 }
