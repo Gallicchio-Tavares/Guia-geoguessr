@@ -12,20 +12,20 @@ function scrollFunction() {
   }
 }
 
-// When the user clicks on the button, scroll to the top of the document
+// Botão pro usurario voltasr pro topo da página
 function topFunction() {
-  document.body.scrollTop = 0; // For Safari
-  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+  document.body.scrollTop = 0; // Safari
+  document.documentElement.scrollTop = 0; // Chrome, Firefox, IE e Opera
 } 
 
 /* Abaixo, pra fazer as imagens funcionarem */
 
-var slideIndex = [1,1];
-var slideId = ["mySlides1", "mySlides2"]
+var slideIndex = [1,1,1,1];
+var slideId = ["mySlides1", "mySlides2", "mySlides3", "mySlides4"]
 showSlides(1, 0);
 showSlides(1, 1);
-// showSlides(1, 2);
-// showSlides(1, 3);
+showSlides(1, 2);
+showSlides(1, 3);
 // showSlides(1, 4);
 
 function plusSlides(n, no) {
