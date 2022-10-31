@@ -120,6 +120,12 @@ aside{
     font-weight: bold;
 }
 
+.sub-subtitle{
+    color: #A7D379;
+    font-weight: bold;
+    font-size: 105%;
+}
+
 .gg-link:link{
     color: white;
 }
