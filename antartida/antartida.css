@@ -2,14 +2,13 @@ body{
     background-color: #161618;
     font-family: 'Ubuntu', sans-serif;
     color: #b1b1b1;
-    text-transform: none;
     text-align: justify;    
     font-size: 1.05em;
 }
 
 main{
     margin-left: 17%; 
-    margin-right: 1%;  
+    margin-right: 5%;  
     flex-wrap: wrap;
     overflow-x: hidden;
     justify-content: center;
@@ -44,10 +43,34 @@ aside{
     padding-top: 0.7%;
 }
 
+.img-unica{
+    border: solid 2px #3DA542;
+    border-radius: 2px;
+    max-width: 30%;
+}
+
 @media screen and (max-height: 450px) {
     aside {padding-top: 15px;}
     .button {font-size: 18px;}
 }
+
+.btn {
+    position: fixed;
+    bottom: 20px;
+    right: 2%;
+    z-index: 99; 
+    border: none;
+    outline: none; 
+    background-color: #A7D379;
+    color: #161618; 
+    cursor: pointer; 
+    padding: 15px; 
+    border-radius: 100%;
+  }
+    
+  .btn:hover {
+    background-color: #a9a9a9;
+  }
 
 .home{
     display: flex;
@@ -94,6 +117,7 @@ aside{
 }
 .subtitle{
     color: #A7D379;
+    font-weight: bold;
 }
 
 .gg-link:link{
