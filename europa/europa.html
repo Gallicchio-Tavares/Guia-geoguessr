@@ -15,7 +15,7 @@
 
     </header>
     <main>
-        <aside>
+        <nav>
             <button onclick="location.href='../home/index.html'" class="home">Home</button>
             <hr>
             <button onclick="location.href=''" class="paises">Åland</button>
@@ -64,14 +64,48 @@
             <button onclick="location.href=''" class="paises">Svalbard</button>
             <button onclick="location.href=''" class="paises">Turquia</button>
             <button onclick="location.href=''" class="paises">Ucrânia</button>
-        </aside>
-        
+        </nav>
+        <!-- <details style="margin-left: 20%;">
+            <summary>This is what you want to show before expanding</summary>
+            <p>This is where you put the details that are shown once expanded</p>
+        </details> -->
         <div>
-            <h1>Europa:</h1>
+            <h1>Europa: dicas gerais</h1>
+            <h2 style="margin-top: 50%;" class="subtitle">Topografia:</h2>
+            <img style="max-width: 60%" class="myImages" class="responsive" id="myImg" src="images/topografia-europa.jpg" alt="topografia da europa">
+            <!-- The Modal -->
+            <div id="myModal" class="modal">
+                <!-- The Close Button -->
+                <span class="close">&times;</span>
+            
+                <!-- Modal Content (The Image) -->
+                <img class="modal-content" id="img01">
+            </div>
+            <!-- quais lugares são montanhosos e quais não -->
+            <!-- <p>É</p> -->
+            <h2 class="subtitle">Clima:</h2>
+            <!-- <img style="max-width: 60%" class="myImages" id="myImg"> -->
+
+            <h2 class="subtitle">Estradas (E-road Network):</h2>
+            <!-- estradas no geral tem linhas brancas -->
+            <!-- Página inicial do básico da europa. falar das ruas E, diferenças de clima de cada região, básico de diferença de vegetação
+            (norte, báltico, mediterrâneo, alpino, etc), falar da topografia e dos idiomas. -->
+            <h2 class="subtitle">Vídeos Gerais:</h2>
+            <div class="videos" >
+                <div id="video1">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/tShEX6RkSc0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div id="video2">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/BwrzfkCeJ1k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>          
+                </div>
+            </div>
+            
+            <h2 class="subtitle">Links úteis:</h2>
         </div>
     </main>
     <footer>
 
     </footer>
+    <script src="europa.js"></script>
 </body>
 </html>
