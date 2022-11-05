@@ -1,9 +1,9 @@
 body{
     height: 100%;
-    background-image: url(europa.png);
+    background-image: url(images/europa.png);
     background-color: #161618;
     background-repeat: no-repeat;
-    background-size: 60%;
+    background-size: auto;
     background-position: 70%;
     font-family: 'Ubuntu', sans-serif;
     color: #b1b1b1;
@@ -22,7 +22,7 @@ body{
     border-radius: 12px;
     padding: 16px 16px;
     margin: 9%;
-    font-size: 16px;
+    font-size: 1.5vw;
     width: 80%;
 }
 
@@ -35,14 +35,18 @@ body{
 .paises{
     display: flex;
     flex-direction: column;
+    /* ^ criando uma flexbox */
     transition-duration: 0.4s;
+
     background-color: #212124;
     color: white;
+
     border: 2px solid #3DA542; 
     border-radius: 12px;
     padding: 16px 16px;
-    margin: 9%;
-    font-size: 16px;
+    margin: 9% 10% 9% 10%;
+    font-size: 1.5vw;
+    font-display: auto;
     width: 80%;
 }
 
@@ -52,11 +56,11 @@ body{
     box-shadow: 0 12px 10px 0 rgba(255, 255, 255, 0.24), 0 17px 50px 0 rgba(255, 255, 255, 0.19);
 }
 
-aside{
+nav{
     height: 100%; 
-    width: auto;
+    width: 15%;
     position: fixed;
-    /* z-index: 1; */
+    z-index: 1;
     top: 0;
     left: 0;
     background-color: #212124;
@@ -64,8 +68,97 @@ aside{
     overflow-y: visible;
 }
 
+/* aside::-ms-expand{
+    width: 20%;
+} */
+
 h1{
     display: flex;
     margin-left: 20%;
     color: #3DA542;
+}
+
+.subtitle{
+    color: #A7D379;
+    font-weight: bold;
+    /* font-size: 14px; */
+    margin-left: 20%;
+}
+
+p{
+    margin-left: 25%;
+}
+
+/* começo img única: */
+
+#myImg {
+    width: 50%;
+    /* max-width: 100%; */
+    display: block;
+    position: relative;
+    margin-left: 20%;
+    border: 2px solid #3DA542;
+    border-radius: 2px;
+    cursor: pointer;
+    transition: 0.3s; 
+  }
+  
+  /* The Modal (background) */
+  .modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+  }
+  
+  /* Modal Content (Image) */
+  .modal-content {
+    margin: auto;
+    display: block;
+    width: 100%;
+    max-width: 100%;
+  }
+  
+  /* Add Animation - Zoom in the Modal */
+  .modal-content{
+    animation-name: zoom;
+    animation-duration: 0.6s;
+  }
+  
+  @keyframes zoom {
+    from {transform:scale(0)}
+    to {transform:scale(1)}
+  }
+  
+  /* The Close Button */
+  .close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+/* ^fim da img única */
+
+.videos{
+    margin-left: 20%;
+    margin-right: 20%;
+    position: relative;
 }
