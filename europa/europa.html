@@ -64,6 +64,7 @@
             <button onclick="location.href=''" class="paises">Svalbard</button>
             <button onclick="location.href=''" class="paises">Turquia</button>
             <button onclick="location.href=''" class="paises">Ucrânia</button>
+            
         </nav>
         <!-- <details style="margin-left: 20%;">
             <summary>This is what you want to show before expanding</summary>
@@ -71,19 +72,70 @@
         </details> -->
         <div>
             <h1>Europa: dicas gerais</h1>
-            <h2 style="margin-top: 50%;" class="subtitle">Topografia:</h2>
-            <img style="max-width: 60%" class="myImages" class="responsive" id="myImg" src="images/topografia-europa.jpg" alt="topografia da europa">
-            <!-- The Modal -->
-            <div id="myModal" class="modal">
-                <!-- The Close Button -->
-                <span class="close">&times;</span>
-            
-                <!-- Modal Content (The Image) -->
-                <img class="modal-content" id="img01">
+            <div style="padding-top: 2%;">
+                <h2 style="margin-top: 50%;" class="subtitle">Topografia:</h2>
+                <img style="max-width: 40vw" class="myImages" id="myImg" src="images/topografia-europa.jpg" alt="topografia da europa">
+                <div id="myModal" class="modal">
+                    <span class="close">&times;</span>
+                    <img class="modal-content" id="img01">
+                </div>
+                <!-- quais lugares são montanhosos e quais não -->
             </div>
-            <!-- quais lugares são montanhosos e quais não -->
-            <!-- <p>É</p> -->
-            <h2 class="subtitle">Clima:</h2>
+            <div style="padding-top: 2%;">
+                <h2 class="subtitle">Clima e Vegetação:</h2>
+                <p class="paragrafo">O clima da europa possui relação direta com a vegetação, e ter uma ideia básica de como cada região se parece mais ou menos já pode ajudar bastante na identificação.
+                    Para simplificar, consideremos que há 7 tipos de biomas que são encontrados na europa: tundra, taiga/floresta boreal, floresta temperada atlântica, floresta temperada central, estepe/pradaria, floresta mediterrânea e, talvez o mais reconhecível, os alpes. 
+                </p>
+                
+                <ul class="paragrafo-sub">
+                    <li><b style="color: #A7D379;">Tundra:</b>  encontrada no extremo norte da Europa, é uma vegetação rasteira e sem árvores, e é muito comum encontrar líquens e musgos.</li>
+                    <br>
+                    <li><b style="color: #A7D379;">Taiga:</b> encontrada no norte da Europa, é uma vegetação composta por pinheiros e com florestas densas. É comum encontrar árvores de tronco branco, chamadas de bétulas.</li>
+                    <br>
+                    <li><b style="color: #A7D379;">Floresta temperada oceânica:</b></li>
+                    <br>
+                    <li><b style="color: #A7D379;">Floresta temperada continental:</b></li>
+                    <br>
+                    <li><b style="color: #A7D379;">Estepe:</b></li>
+                    <br>
+                    <li><b style="color: #A7D379;">Mediterrâneo:</b></li>
+                    <br>
+                    <li><b style="color: #A7D379;">Alpes:</b></li>
+                </ul>
+                <!-- <img style="width: 40vw" class="myImages" id="myImg">
+                <div id="myModal" class="modal">
+                    <span class="close">&times;</span>
+                    <img class="modal-content" id="img02">
+                </div> -->
+                <div class="slideshow-container">
+                    <div class="mySlides1">
+                        <img class="image" src="images/clima-europa.png" alt="clima da europa" style="width:100%">
+                    </div>
+                    <div class="mySlides1">
+                        <img class="image" src="images/vegetacao-europa.jpg"  alt="vegetação da europa" style="width:100%">
+                    </div>
+                    <!-- Next and previous buttons -->
+                    <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
+                    <div style="text-align:center">
+                        <span class="dot" onclick="currentSlide(1, 0)"></span>
+                        <span class="dot" onclick="currentSlide(2, 0)"></span>
+                    </div> 
+                </div>
+                <p class="paragrafo">
+                    Obs: tenha em mente que a Europa é um continente muito desmatado, então você não vai encontrar florestas muito densas na maioria das vezes.
+                </p>
+                <!-- colocar um mapa do clima e da vegetação geral, colocar um mapa de cada bioma e separar por
+                    - tundra
+                    - floresta boreal
+                    - taiga
+                    - floresta temperada
+                    - estepe e pradaria
+                    - floresta mediterrânea
+                    mostrar prints da paisagem
+                --> 
+            </div>
+            
             <!-- <img style="max-width: 60%" class="myImages" id="myImg"> -->
 
             <h2 class="subtitle">Estradas (E-road Network):</h2>
@@ -106,6 +158,6 @@
     <footer>
 
     </footer>
-    <script src="europa.js"></script>
+    <script src="europa.js"></script><script src="responsive-nav.js"></script>
 </body>
 </html>
