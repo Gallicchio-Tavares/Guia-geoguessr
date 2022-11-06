@@ -47,10 +47,10 @@
   .text {
     color: #f2f2f2;
     background-color: rgba(0,0,0,0.6);
-    font-size: 15px;
+    font-size: 1.2vw;
     padding: 8px 12px;
     position: absolute;
-    bottom: 7%;
+    bottom: 3vw;
     width: 50%;
     margin-left: 25%;
     text-align: center;
