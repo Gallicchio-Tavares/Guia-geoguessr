@@ -22,10 +22,10 @@ span.onclick = function() {
   modal.style.display = "none";
 }
 
-var slideIndex = [1];
-var slideId = ["mySlides1"]
+var slideIndex = [1,1];
+var slideId = ["mySlides1", "mySlides2"]
 showSlides(1, 0);
-// showSlides(1, 1);
+showSlides(1, 1);
 // showSlides(1, 2);
 // showSlides(1, 3);
 // showSlides(1, 4);
