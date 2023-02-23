@@ -1,19 +1,14 @@
 body{
   background-image: url(../fundo.png);
-  /* background-repeat: no-repeat; */
   background-size: 100%;
   background-position: center;
-  font-family: 'Ubuntu', sans-serif;
-  color: #a9a9a9;
-  text-transform: none;
-  text-align: justify;    
   font-size: 1.05em;
+  text-align: justify;   
 }
 
 header{
   background-color: rgba(22, 22, 24, 0.5);
-  overflow: hidden; 
-    
+  overflow: hidden;  
 }
 
 #title{
@@ -48,7 +43,7 @@ main{
   /* text-align: justify; */
 }
 
-h2{
+h1, h2{
   color: #3DA542;
 }
 
@@ -72,14 +67,6 @@ h3{
   text-align: justify;
 }
 
-.link:link{
-  color: #A7D379;
-}
-
-.link:visited{
-  color: #a9a9a9;
-}
-
 .btn {
   position: fixed;
   bottom: 20px;
@@ -98,13 +85,6 @@ h3{
   background-color: #a9a9a9;
 }
 
-
-/* Inicio da estilização das imagens */
-
-
-
-/* Começo Imagem única */
-
 #myImg {
   max-width: 75%;
   position: relative;
@@ -114,60 +94,6 @@ h3{
   cursor: pointer;
   transition: 0.3s; 
 }
-
-/* The Modal (background) */
-.modal {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
-  padding-top: 100px; /* Location of the box */
-  left: 0;
-  top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
-}
-
-/* Modal Content (Image) */
-.modal-content {
-  margin: auto;
-  display: block;
-  width: 100%;
-  max-width: 100%;
-}
-
-/* Add Animation - Zoom in the Modal */
-.modal-content{
-  animation-name: zoom;
-  animation-duration: 0.6s;
-}
-
-@keyframes zoom {
-  from {transform:scale(0)}
-  to {transform:scale(1)}
-}
-
-/* The Close Button */
-.close {
-  position: absolute;
-  top: 15px;
-  right: 35px;
-  color: white;
-  font-size: 40px;
-  font-weight: bold;
-  transition: 0.3s;
-}
-
-.close:hover,
-.close:focus {
-  color: #bbb;
-  text-decoration: none;
-  cursor: pointer;
-}
-
-/* ^ Imagem única */
 
 footer{
   background-color: rgba(22, 22, 24, 0.5);

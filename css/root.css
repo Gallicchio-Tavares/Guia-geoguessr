@@ -1,0 +1,20 @@
+:root{
+    --dark-green: #3DA542;
+    --light-green: #A7D379;
+    --background-clr: #212124;
+    --dark-black: #161618;
+    --gray: #a9a9a9;
+}
+
+*{
+    font-family: 'Ubuntu', sans-serif;
+    color: white;
+}
+
+.link:link{
+    color: var(--light-green);
+}
+  
+.link:visited{
+    color: var(--gray);
+}
