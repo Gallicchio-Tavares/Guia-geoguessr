@@ -109,3 +109,22 @@ h1{
   gap: 1vw;
   flex-wrap: wrap;
 }
+
+.img-ex{
+  display: flex;
+  align-items: center;
+}
+
+.estrada-EU{
+  position: relative;
+  width: 120px;
+  padding-left: 1vw;
+}
+
+@media only screen and (max-width: 800px) {
+  /* For mobile phones: */
+  .estrada-EU{
+    position: relative;
+    width: 90px;
+  }
+}
