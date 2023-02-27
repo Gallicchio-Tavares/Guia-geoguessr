@@ -1,72 +1,14 @@
 body{
-    height: 100%;
-    background-image: url(images/europa.png);
-    background-repeat: repeat-y;
-    background-color: var(--dark-black);
-    background-size: auto auto;
-    background-position: 70%;   
-    font-size: 1.05em;
-    margin-left: 20%;
-    overflow-x: hidden; /* impedir que tenha scroll horizontal*/
-    text-align: justify;
-}
-
-.home{
-    display: flex;
-    flex-direction: column;
-    transition-duration: 0.4s;
-    background-color: var(--background-clr);
-    color: white;
-    border: 2px solid var(--gray); 
-    border-radius: 12px;
-    padding: 16px 16px;
-    margin: 9%;
-    font-size: 1.5vw;
-    width: 80%;
-}
-
-.home:hover{
-    background-color: var(--gray);
-    color: black;
-    box-shadow: 0 12px 10px 0 rgba(255, 255, 255, 0.24), 0 17px 50px 0 rgba(255, 255, 255, 0.19);
-}
-
-.paises{
-    display: flex;
-    flex-direction: column;
-    /* ^ criando uma flexbox */
-    transition-duration: 0.4s;
-
-    background-color: var(--background-clr);
-    color: white;
-
-    border: 2px solid var(--dark-green); 
-    border-radius: 12px;
-    padding-top: 16px;
-    padding-bottom: 16px;
-    
-    margin: 9% 10% 9% 10%;
-    font-size: 1.5vw;
-    text-align: center;
-    width: 80%;
-}
-
-.paises:hover{
-    background-color: var(--dark-green);
-    color: black;
-    box-shadow: 0 12px 10px 0 rgba(255, 255, 255, 0.24), 0 17px 50px 0 rgba(255, 255, 255, 0.19);
-}
-
-nav{
-  height: 100%; 
-  width: 15%;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  background-color: var(--background-clr);
-  overflow-x: hidden;
-  overflow-y: visible;
+  height: 100%;
+  background-image: url(images/europa.png);
+  background-repeat: repeat-y;
+  background-color: var(--dark-black);
+  background-size: auto auto;
+  background-position: 70%;   
+  font-size: 1.05em;
+  margin-left: 20%;
+  overflow-x: hidden; /* impedir que tenha scroll horizontal*/
+  text-align: justify;
 }
 
 h1{
@@ -121,7 +63,7 @@ h1{
   padding-left: 1vw;
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 768px) {
   /* For mobile phones: */
   .estrada-EU{
     position: relative;
