@@ -1,143 +1,15 @@
-body{
-    background-color: #161618;
-    font-family: 'Ubuntu', sans-serif;
-    color: #b1b1b1;
-    text-align: justify;    
-    font-size: 1.05em;
-}
-
-main{
-    margin-left: 17%; 
-    margin-right: 5%;  
-    flex-wrap: wrap;
-    overflow-x: hidden;
-    justify-content: center;
-}
-
-hr{
-    color: rgba(0, 0, 0, 0.4);
-}
-
-h1{
-    color: white;
-}
-
 header{
-    background-size: 100%;
-    margin-left: 17%;
-    max-width: 100%;
-    width: 90%;
-    padding-top: 1%;
-}
-
-aside{
-    height: 100%; 
-    width: 15%; /*Set the width of the sidebar*/
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    background-color: #212124;
-    overflow-x: hidden;
-    overflow-y: visible;
-    padding-top: 0.7%;
+    padding-top: 1.2%;
 }
 
 .img-unica{
-    border: solid 2px #3DA542;
+    border: solid 2px var(--dark-green);
     border-radius: 2px;
     max-width: 30%;
 }
 
-@media screen and (max-height: 450px) {
-    aside {padding-top: 15px;}
-    .button {font-size: 18px;}
-}
-
-.btn {
-    position: fixed;
-    bottom: 20px;
-    right: 2%;
-    z-index: 99; 
-    border: none;
-    outline: none; 
-    background-color: #A7D379;
-    color: #161618; 
-    cursor: pointer; 
-    padding: 15px; 
-    border-radius: 100%;
-  }
-    
-  .btn:hover {
-    background-color: #a9a9a9;
-  }
-
-.home{
-    display: flex;
-    flex-direction: column;
-    transition-duration: 0.4s;
-    background-color: #212124;
-    color: white;
-    border: 2px solid #A9A9A9; 
-    border-radius: 12px;
-    padding: 16px 16px;
-    margin: 10%;
-    font-size: 1.5vw;
-    width: 80%;
-}
-
-.home:hover{
-    background-color: #A9A9A9;
-    color: black;
-    box-shadow: 0 12px 10px 0 rgba(255, 255, 255, 0.24), 0 17px 50px 0 rgba(255, 255, 255, 0.19);
-}
-
-.button {
-    display: flex;
-    flex-direction: column;
-    transition-duration: 0.4s;
-    background-color: #212124;
-    color: white;
-    border: 2px solid #3DA542; 
-    border-radius: 12px;
-    padding: 16px 16px;
-    margin: 10%;
-    font-size: 1.5vw;
-    width: 80%;
-  }
-
-.button:hover {
-    background-color: #3DA542;
-    color: black;
-    box-shadow: 0 12px 10px 0 rgba(255, 255, 255, 0.24), 0 17px 50px 0 rgba(255, 255, 255, 0.19);
-}
-
-.title{
-    color: #3DA542;
-}
-.subtitle{
-    color: #A7D379;
-    font-weight: bold;
-}
-
 .sub-subtitle{
-    color: #A7D379;
+    color: var(--light-green);
     font-weight: bold;
     font-size: 105%;
 }
-
-.gg-link:link{
-    color: white;
-}
-
-.gg-link:visited{
-    color: #a9a9a9;
-}
-
-#flag{
-    display: block;
-    width: 15%;
-    float: left;
-    margin-right: 2%;
-}
-

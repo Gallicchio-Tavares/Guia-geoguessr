@@ -1,0 +1,20 @@
+header{
+    padding-top: 0.5%; /* muda */
+}
+
+p{
+    margin-left: 5%;
+}
+
+.imagem{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2%;
+}
+
+.img-unica{
+    
+    border: solid 2px var(--dark-green);
+    border-radius: 2px;
+}

@@ -1,0 +1,33 @@
+body{
+    height: 100%;
+    background-color: var(--dark-black);
+    font-family: 'Ubuntu', sans-serif;
+    color: var(--gray);
+    text-align: justify;    
+    font-size: 1.05em;
+    overflow-x: hidden;
+}
+
+header{
+    background-size: 100%;
+    margin-left: 17%;
+    max-width: 100%;
+}
+
+hr{
+    color: var(--gray);
+}
+
+main{
+    margin-left: 17%; 
+    margin-right: 5%;  
+}
+
+.title{
+    color: var(--dark-green);
+}
+
+.subtitle{
+    color: var(--light-green);
+    font-weight: bold;
+}

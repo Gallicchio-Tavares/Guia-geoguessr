@@ -10,9 +10,24 @@ linkar alguns mapas legais, vídeos explicativos também; meta; cidades importan
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" type="text/css" href="mongolia.css">
+    <link rel="stylesheet" href="../../css/modal.css">
+    <link rel="stylesheet" href="../../css/root.css">
+    <link rel="stylesheet" href="../../css/slideshow.css">
+    <link rel="stylesheet" href="../../css/continents.css">
+    <link rel="stylesheet" href="../../css/country.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Mongólia</title>
 </head>
 <body>
+    <nav class="sidenav">
+        <button class="home" onclick="location.href='../../home/index.html'">Home</button><hr>
+        <button class="continents" onclick="location.href='../../africa/africa.html'">África</button>
+        <button class="continents" onclick="location.href='../../americas/america.html'">América</button>
+        <button class="continents" onclick="location.href='../../antartida/antartida.html'">Antártida</button>
+        <button class="continents" onclick="location.href='../asia.html'">Ásia</button>
+        <button class="continents" onclick="location.href='../../europa/europa.html'">Europa</button>
+        <button class="continents" onclick="location.href='../../oceania/oceania.html'">Oceania</button>
+    </nav>
     <header>
         <div>
             <img id="flag" src="mongolia-bandeira.png" alt="bandeira da Mongólia">
@@ -26,57 +41,63 @@ linkar alguns mapas legais, vídeos explicativos também; meta; cidades importan
         </div>
     </header>
     <hr>
-    <aside class="sidenav">
-        <div>
-            <button class="home" onclick="location.href='../../home/index.html'">Home</button><hr>
-            <button class="button" onclick="location.href='../../africa/africa.html'">África</button>
-            <button class="button" onclick="location.href='../../americas/america.html'">América</button>
-            <button class="button" onclick="location.href='../../antartida/antartida.html'">Antártida</button>
-            <button class="button" onclick="location.href='../asia.html'">Ásia</button>
-            <button class="button" onclick="location.href='../../europa/europa.html'">Europa</button>
-            <button class="button" onclick="location.href='../../oceania/oceania.html'">Oceania</button>
-        </div>
-    </aside>
     <main>
-        <h2 class="title">Geografia:</h2>
-        <dd>
-            <h3 class="subtitle">Vegetação:</h3>
-            
-            <h3 class="subtitle">Solo:</h3>
-        </dd>
-        <h2 class="title">Arquitetura:</h2>
+        <button onclick="topFunction()" class="btn"><i style="color: var(--dark-black);" class="fa fa-home"></i></button>
+        <div>
+          <h2 class="title">Geografia:</h2>
+            <dd>
+                <h3 class="subtitle">Vegetação:</h3>
+                
+                <h3 class="subtitle">Solo:</h3>
 
-        <h2 class="title">Estradas:</h2>
+                <h3 class="subtitle">Topografia:</h3>
+            </dd>  
+        </div>
+        <div>
+           <h2 class="title">Arquitetura:</h2> 
+        </div>
+        <div>
+            <h2 class="title">Estradas:</h2>
+        </div>
+        <div>
+            <h2 class="title">Idioma:</h2>
+            <p> 
+                O idioma falado é o mongol, escrito com o alfabeto cirílico. Há algumas especificidades no alfabeto que podem ajudar a
+                diferenciar, por exemplo, o mongol do russo ou do quirguiz.
+            </p>
+            <img class="img-body" id="alfabeto-img" src="mongolia-alfabeto.png" alt="alfabeto mongol - cirílico"/>
+            <p> A letra Ө ө só existe no alfabeto mongol.</p>
+        </div>
+        <div>
+           <h2 class="title">Meta:</h2>
+            <dd>
+                <h3 class="subtitle">Carro do Google:</h3>
+                
+                <h3 class="subtitle">Geração da câmera:</h3>
 
-        <h2 class="title">Idioma:</h2>
-        <p> 
-            O idioma falado é o mongol, escrito com o alfabeto cirílico. Há algumas especificidades no alfabeto que podem ajudar a
-            diferenciar, por exemplo, o mongol do russo ou do quirguiz.
-        </p>
-        <img class="img-body" id="alfabeto-img" src="mongolia-alfabeto.png" alt="alfabeto mongol - cirílico"/>
-        <p> A letra <big>Ө ө</big> só existe no alfabeto mongol.</p>
-
-        <h2 class="title">Meta:</h2>
-        <dd>
-            <h3 class="subtitle">Carro do Google:</h3>
-            
-            <h3 class="subtitle">Geração da câmera:</h3>
-
-            <h3 class="subtitle">Streetview:</h3>
-        </dd>
-
-        <h2 class="title">Mapas interessantes:</h2>
-
-        <h2 class="title">Vídeos gerais:</h2>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/TpdGIPHPBwU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-        <h2 class="title">Links úteis:</h2>
-        <a class="link" href="https://docs.google.com/document/d/1W_QK69BXMHUZXI5VdNH93_aLhTd9SQzNYhRLrh_-ZVA/edit">Documento do Google Docs explicando de forma extremamente aprofundada o Meta da Mongólia</a>
-        <br/>
+                <h3 class="subtitle">Streetview:</h3>
+            </dd> 
+        </div>
+        <div>
+            <h2 class="title">Mapas para treinar:</h2>
+        </div>
+        <div>
+            <h2 class="title">Vídeos gerais:</h2>
+            <div class="videos-div">
+                <div class="video">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/TpdGIPHPBwU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div> 
+        </div>
+        <div>
+            <h2 class="title">Links úteis:</h2>
+            <div>
+            <a class="link" href="https://docs.google.com/document/d/1W_QK69BXMHUZXI5VdNH93_aLhTd9SQzNYhRLrh_-ZVA/edit">Documento do Google Docs explicando de forma extremamente aprofundada o Meta da Mongólia</a>
+                <br/> 
+            </div>
+        </div>
     </main>
-    <footer>
-        
-    </footer>
-    
+    <footer></footer>
+    <script src="../../javascript/root.js"></script>
 </body>
 </html>

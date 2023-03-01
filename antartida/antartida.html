@@ -12,10 +12,21 @@
     <link rel="stylesheet" href="../css/slideshow.css">
     <link rel="stylesheet" href="../css/root.css">
     <link rel="stylesheet" href="../css/modal.css">
+    <link rel="stylesheet" href="../css/continents.css">
+    <link rel="stylesheet" href="../css/country.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Antártida: Um Guia Geoguessr</title>
 </head>
 <body>
+    <nav class="sidenav">
+            <button class="home" onclick="location.href='../home/index.html'">Home</button><hr>
+            <button class="continents" onclick="location.href='../africa/africa.html'">África</button>
+            <button class="continents" onclick="location.href='../americas/america.html'">América</button>
+            <button class="continents" onclick="location.href='../antartida/antartida.html'">Antártida</button>
+            <button class="continents" onclick="location.href='../asia/asia.html'">Ásia</button>
+            <button class="continents" onclick="location.href='../europa/europa.html'">Europa</button>
+            <button class="continents" onclick="location.href='../oceania/oceania.html'">Oceania</button>
+    </nav>
     <header style="padding-bottom: 0.5%;">
         <div>
             <img id="flag" src="images/bandeira-antartida.png" alt="bandeira da antartida">
@@ -29,17 +40,7 @@
         </div>
     </header>
     <hr>
-    <aside class="sidenav">
-        <div>
-            <button class="home" onclick="location.href='../home/index.html'">Home</button><hr>
-            <button class="button" onclick="location.href='../africa/africa.html'">África</button>
-            <button class="button" onclick="location.href='../americas/america.html'">América</button>
-            <button class="button" onclick="location.href='../antartida/antartida.html'">Antártida</button>
-            <button class="button" onclick="location.href='../asia/asia.html'">Ásia</button>
-            <button class="button" onclick="location.href='../europa/europa.html'">Europa</button>
-            <button class="button" onclick="location.href='../oceania/oceania.html'">Oceania</button>
-        </div>
-    </aside>
+    
     <main>
         <button onclick="topFunction()" class="btn"><i style="color: var(--dark-black);" class="fa fa-home"></i></button>
         <h2 class="title">Geografia:</h2>
@@ -56,57 +57,57 @@
                 <br>
                 <!-- slides da estação -->
                 <div class="slideshow-container">
-                <div class="mySlides1">
-                    <div class="numbertext">1 / 8</div>
-                    <img src="images/ant-solo.png" style="width:100%">
-                    <div class="text">Paisagem sem vegetação e com neve/gelo esparso. Montanhas ao fundo.</div>
+                    <div class="mySlides1">
+                        <div class="numbertext">1 / 8</div>
+                        <img src="images/ant-solo.png" style="width:100%">
+                        <div class="text">Paisagem sem vegetação e com neve/gelo esparso. Montanhas ao fundo.</div>
+                    </div>
+                
+                    <div class="mySlides1">
+                        <div class="numbertext">2 / 8</div>
+                        <img src="images/mcmurdo-neve.png" style="width:100%">
+                        <div class="text">Neve ao norte da estação McMurdo</div>
+                    </div>
+                    <div class="mySlides1">
+                        <div class="numbertext">3 / 8</div>
+                        <img src="images/mcmurdo-norte.png" style="width:100%">
+                    </div>
+                    <div class="mySlides1">
+                        <div class="numbertext">4 / 8</div>
+                        <img src="images/ant-mar.png" style="width:100%">
+                        <div class="text">Mar congelado</div>
+                    </div>
+                    <div class="mySlides1">
+                        <div class="numbertext">5 / 8</div>
+                        <img src="images/ant-montanhoso1.png" style="width:100%">
+                        <div class="text">Montanhas, nos arredores.</div>
+                    </div>
+                    <div class="mySlides1">
+                        <div class="numbertext">6 / 8</div>
+                        <img src="images/ant-montanhoso2.png " style="width:100%">  
+                    </div>
+                    <div class="mySlides1">
+                        <div class="numbertext">7 / 8</div>
+                        <img src="images/ant-geleiras.png" style="width:100%">  
+                    </div>
+                    <div class="mySlides1">
+                        <div class="numbertext">8 / 8</div>
+                        <img src="images/ant-rochoso.png" style="width:100%">  
+                    </div>
+                    <!-- Next and previous buttons -->
+                    <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
+                    <div style="text-align:center">
+                        <span class="dot" onclick="currentSlide(1, 0)"></span>
+                        <span class="dot" onclick="currentSlide(2, 0)"></span>
+                        <span class="dot" onclick="currentSlide(3, 0)"></span>
+                        <span class="dot" onclick="currentSlide(4, 0)"></span>
+                        <span class="dot" onclick="currentSlide(5, 0)"></span>
+                        <span class="dot" onclick="currentSlide(6, 0)"></span>
+                        <span class="dot" onclick="currentSlide(7, 0)"></span>
+                        <span class="dot" onclick="currentSlide(8, 0)"></span>
+                    </div> 
                 </div>
-            
-                <div class="mySlides1">
-                    <div class="numbertext">2 / 8</div>
-                    <img src="images/mcmurdo-neve.png" style="width:100%">
-                    <div class="text">Neve ao norte da estação McMurdo</div>
-                </div>
-                <div class="mySlides1">
-                    <div class="numbertext">3 / 8</div>
-                    <img src="images/mcmurdo-norte.png" style="width:100%">
-                </div>
-                <div class="mySlides1">
-                    <div class="numbertext">4 / 8</div>
-                    <img src="images/ant-mar.png" style="width:100%">
-                    <div class="text">Mar congelado</div>
-                </div>
-                <div class="mySlides1">
-                    <div class="numbertext">5 / 8</div>
-                    <img src="images/ant-montanhoso1.png" style="width:100%">
-                    <div class="text">Montanhas, nos arredores.</div>
-                </div>
-                <div class="mySlides1">
-                    <div class="numbertext">6 / 8</div>
-                    <img src="images/ant-montanhoso2.png " style="width:100%">  
-                </div>
-                <div class="mySlides1">
-                    <div class="numbertext">7 / 8</div>
-                    <img src="images/ant-geleiras.png" style="width:100%">  
-                </div>
-                <div class="mySlides1">
-                    <div class="numbertext">8 / 8</div>
-                    <img src="images/ant-rochoso.png" style="width:100%">  
-                </div>
-                <!-- Next and previous buttons -->
-                <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
-                <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
-                <div style="text-align:center">
-                    <span class="dot" onclick="currentSlide(1, 0)"></span>
-                    <span class="dot" onclick="currentSlide(2, 0)"></span>
-                    <span class="dot" onclick="currentSlide(3, 0)"></span>
-                    <span class="dot" onclick="currentSlide(4, 0)"></span>
-                    <span class="dot" onclick="currentSlide(5, 0)"></span>
-                    <span class="dot" onclick="currentSlide(6, 0)"></span>
-                    <span class="dot" onclick="currentSlide(7, 0)"></span>
-                    <span class="dot" onclick="currentSlide(8, 0)"></span>
-                </div> 
-            </div>
                 <br>
                 <li>
                     <b class="sub-subtitle">Deception Island: </b> 
@@ -265,5 +266,6 @@
         
     </footer>
     <script src="index.js"></script>
+    <script src="../javascript/root.js"></script>
 </body>
 </html>

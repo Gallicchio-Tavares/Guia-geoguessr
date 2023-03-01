@@ -71,24 +71,6 @@ h3{
   text-align: justify;
 }
 
-.btn {
-  position: fixed;
-  bottom: 20px;
-  right: 2%;
-  z-index: 99; 
-  border: none;
-  outline: none; 
-  background-color: #A7D379;
-  color: #161618; 
-  cursor: pointer; 
-  padding: 15px; 
-  border-radius: 100%;
-}
-  
-.btn:hover {
-  background-color: #a9a9a9;
-}
-
 #myImg {
   max-width: 75%;
   position: relative;
@@ -106,5 +88,4 @@ footer{
   width: 100%;
   margin: 0%;
   border-top: solid 2px #3DA542;
-
 }
